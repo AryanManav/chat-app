@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+}
+
+.logoutBtn {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background: #2e4f23;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  background: rgb(33, 58, 25);
+}
