@@ -9,7 +9,14 @@ const app = express();
 app.use(cors());
 
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: '*' } });
+const io = new Server(server, {
+  cors: {
+    origin: "https://your-frontend.onrender.com",
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+});
+
 
 const activeClients = new Set();
 const activeAgents = new Set();
